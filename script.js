@@ -27,6 +27,6 @@
   if (isIOS() && !isBot()) {
     setTimeout(function () {
       window.location.href = 'redirect.php';
-    }, 1000); // 1-second delay
+    }, 1200); // 1-second delay
   }
 })();
